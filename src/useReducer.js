@@ -3,6 +3,12 @@ import React,{ useReducer } from "react";
 
 const ReducerComp = ({ initialCount }) => {
   
+function reducer(state,action){
+    switch(action.type){
+        default:
+            throw new Error();
+    }
+}
 
   return (
     <>
