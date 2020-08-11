@@ -21,19 +21,35 @@ const App = ({ initialCount }) => {
     });
   };
 
+  const addOnePost = () => {
+    let newPost = {
+      name: "Super awesome hooks volume 2",
+      body: "Everything is awesome when you are part of a team that ain't light headed"
+    };
+
+    setPosts([
+      ...posts,
+      newPost
+    ])
+
+  }
+
   return (
     <>
       <h3>Count: {count}</h3>
       <button onClick={addOne}>Add one +</button>
       <button onClick={restOne}>Rest one -</button>
       <button onClick={() => setCount(initialCount)}>Reset</button>
-      <hr />
+      
       {posts.map((item, i) => (
         <div key={i}>
+          <hr />
           <div>Name: {item.name}</div>
           <div>Body: {item.body}</div>
         </div>
       ))}
+
+      <button onClick={addOnePost}>Add one more Post</button>
     </>
   );
 };
