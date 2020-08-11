@@ -4,6 +4,10 @@ const Post = ({item}) => {
 
     useEffect(() => {
         console.log('Post Mounted/created')
+
+        return () => {
+            console.log('component Exit')
+        }
     }, [])
 
     return(

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Post from './post';
 
 const App = ({ initialCount }) => {
@@ -34,17 +34,17 @@ const App = ({ initialCount }) => {
     ])
   }
 
-  useEffect(() => {
-    console.log(count)
-  }, [count])
+  // useEffect(() => {
+  //   console.log(count)
+  // }, [count])
 
-  useEffect(() => {
-    console.log('Posts')
-  }, [posts])
+  // useEffect(() => {
+  //   console.log('Posts')
+  // }, [posts])
 
-  useEffect(() => {
-    console.log("Mounted")
-  }, [])
+  // useEffect(() => {
+  //   console.log("Mounted")
+  // }, [])
 
   const removePost = () => {
     setPosts([])
