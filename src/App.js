@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const App = ({ initialCount }) => {
   let [count, setCount] = useState(initialCount);
@@ -31,8 +31,15 @@ const App = ({ initialCount }) => {
       ...posts,
       newPost
     ])
-
   }
+
+  useEffect(() => {
+    console.log(count)
+  }, [count])
+
+  useEffect(() => {
+    console.log('Posts')
+  }, [posts])
 
   return (
     <>
