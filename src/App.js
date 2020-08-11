@@ -41,6 +41,10 @@ const App = ({ initialCount }) => {
     console.log('Posts')
   }, [posts])
 
+  useEffect(() => {
+    console.log("Mounted")
+  }, [])
+
   return (
     <>
       <h3>Count: {count}</h3>
