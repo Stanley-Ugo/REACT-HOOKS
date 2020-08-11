@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import ReducerComp from './useReducer'
+import ContextApp from './context/ContextApp';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <ReducerComp initialCount={0}/>
+    <ContextApp />
   </React.StrictMode>,
   document.getElementById('root')
 );
