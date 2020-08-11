@@ -3,11 +3,6 @@ import ContextProfile from './ContextProfile';
 
 class ContextApp extends Component {
 
-    state = {
-        username: 'Francis',
-        lastname: 'Jones',
-        age: 20
-    }
     render() {
         return (
             <div>
