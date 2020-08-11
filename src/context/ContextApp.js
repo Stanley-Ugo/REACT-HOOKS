@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import ContextProfile from './ContextProfile';
 
 class ContextApp extends Component {
     render() {
         return (
             <div>
-                Hello
+                <ContextProfile/>
             </div>
         )
     }
