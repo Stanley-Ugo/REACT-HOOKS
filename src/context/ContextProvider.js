@@ -15,7 +15,18 @@ class ContextProvider extends Component {
     return (
         <MyContext.Provider
           value={{
-              profile:this.state.profile
+              profile:this.state.profile,
+              hey: () => {
+                  alert('hey')
+              },
+              incAge: ()=> {
+                  this.setState({
+                      profile: {
+                          ...this.state.profile,
+                          age: this.state.profile.age + 1
+                      }
+                  })
+              }
           }}
         >
             { this.props.children }
