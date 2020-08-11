@@ -22,6 +22,7 @@ const App = ({initialCount}) =>  {
       <h3>Count: {count}</h3>
       <button onClick={addOne}>Add one +</button>
       <button onClick={restOne}>Rest one -</button>
+      <button onClick={()=> setCount(0)}>Reset</button>
     </>
   );
 }
