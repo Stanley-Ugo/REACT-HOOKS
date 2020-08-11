@@ -46,6 +46,10 @@ const App = ({ initialCount }) => {
     console.log("Mounted")
   }, [])
 
+  const removePost = () => {
+    setPosts([])
+  }
+
   return (
     <>
       <h3>Count: {count}</h3>
@@ -58,6 +62,7 @@ const App = ({ initialCount }) => {
       ))}
 
       <button onClick={addOnePost}>Add one more Post</button>
+      <button onClick={removePost}>Remove Post</button>
     </>
   );
 };

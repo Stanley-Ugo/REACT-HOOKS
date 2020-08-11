@@ -2,6 +2,10 @@ import React, { useEffect } from 'react';
 
 const Post = ({item}) => {
 
+    useEffect(() => {
+        console.log('Post Mounted/created')
+    }, [])
+
     return(
         <div>
           <hr />
